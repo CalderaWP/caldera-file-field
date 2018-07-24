@@ -1,0 +1,31 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "brand": {
+          "logo": "./globe.svg",
+          "title": "Caldera File Field",
+          "description": "Caldera Forms File Field 2.0.",
+          "repository": "https://github.com/calderawp/caldera-file-field/",
+          "site": "http://calderalabs.org/caldera-file-field",
+          "author": "http://calderalabs.org",
+          "image": "https://calderaforms.com/wp-content/themes/caldera-forms-dot-com/img/caldera-forms-logo.svg"
+        },
+        "manual": {
+          "index": "./manual/index.md",
+          "globalIndex": true,
+          "files": [
+            "./manual/overview.md"
+          ]
+        }
+      }
+    },
+    {
+      "name": "esdoc-jsx-plugin", "option": {"enable": true}
+    },
+    {"name": "esdoc-ecmascript-proposal-plugin", "option": {"all": true}}
+  ]
+}
